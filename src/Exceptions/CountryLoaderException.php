@@ -13,7 +13,7 @@
  * Link:    https://rinvex.com
  */
 
-namespace Rinvex\Country\Exception;
+namespace Rinvex\Country\Exceptions;
 
 use Exception;
 

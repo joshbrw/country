@@ -15,7 +15,7 @@
 
 namespace Rinvex\Country;
 
-use Rinvex\Country\Exception\CountryLoaderException;
+use Rinvex\Country\Exceptions\CountryLoaderException;
 
 class Loader
 {
