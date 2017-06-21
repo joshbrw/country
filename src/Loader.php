@@ -15,6 +15,8 @@
 
 namespace Rinvex\Country;
 
+use Rinvex\Country\Exceptions\CountryLoaderException;
+
 class Loader
 {
     /**
@@ -34,6 +36,8 @@ class Loader
      */
     public static function country($code, $hydrate = true)
     {
+        $code = mb_strtolower($code);
+
         if (! isset(self::$countries[$code])) {
             self::$countries[$code] = json_decode(self::getFile(__DIR__.'/../resources/data/'.$code.'.json'), true);
         }
@@ -209,7 +213,7 @@ class Loader
      *
      * @param string $filePath
      *
-     * @throws \Rinvex\Country\CountryLoaderException
+     * @throws CountryLoaderException
      *
      * @return string
      */

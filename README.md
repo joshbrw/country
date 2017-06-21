@@ -11,7 +11,6 @@
 [![StyleCI](https://styleci.io/repos/66037019/shield)](https://styleci.io/repos/66037019)
 [![License](https://img.shields.io/packagist/l/rinvex/country.svg?label=License&style=flat-square)](https://github.com/rinvex/country/blob/develop/LICENSE)
 
-
 ## Usage
 
 Install via `composer require rinvex/country`, then use as follows:
