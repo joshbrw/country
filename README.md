@@ -12,6 +12,10 @@
 [![License](https://img.shields.io/packagist/l/rinvex/country.svg?label=License&style=flat-square)](https://github.com/rinvex/country/blob/develop/LICENSE)
 
 
+## What is the purpose of this fork?
+
+[Rinvex/Country](https://github.com/rinvex/country) unfortunately does not support PHP 5.6, as v2.0.0 contains an invalid namespace path and v3.0.0 is PHP 7+ only, so the purpose of this fork is to maintain PHP 5.6 support for older websites.
+
 ## Usage
 
 Install via `composer require rinvex/country`, then use as follows:

@@ -36,6 +36,8 @@ class Loader
      */
     public static function country($code, $hydrate = true)
     {
+        $code = strtolower($code);
+
         if (! isset(self::$countries[$code])) {
             self::$countries[$code] = json_decode(self::getFile(__DIR__.'/../resources/data/'.$code.'.json'), true);
         }
